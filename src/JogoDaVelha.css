@@ -57,3 +57,25 @@ img {
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
+
+.times-container{
+  height: 200px;
+  overflow: auto;
+  
+  
+   
+}
+
+.busca-times{
+  
+   border: 2px solid #f93737;  /* Borda roxa */
+  border-radius: 10px;        /* Cantos arredondados */
+  padding: 10px;              /* Espaço interno */
+  background-color: #ffffff;  /* Fundo branco */
+  box-sizing: border-box; 
+
+
+
+  width: 250px;               
+  margin-top: 20px;
+}

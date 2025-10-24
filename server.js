@@ -4,7 +4,13 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 
-const API_KEY = '79e7f22b000294a57d32de4221c031d0';
+// Api comentada correta 
+//const API_KEY = '4e5d09c392017fe0dc2fabe71f5eb344';
+
+
+//Api que não funciona, so como teste local
+const API_KEY = '082d7bdb42e80c4203b941f0a70a07';
+
 const API_HOST = 'v3.football.api-sports.io';
 
 // Rota PRINCIPAL - COM IMAGENS!
@@ -64,7 +70,7 @@ app.get('/teams/brazil', async (req, res) => {
       { 
         team: { 
           id: 131, 
-          name: 'Flamengo', 
+          name: 'Corintias', 
           country: 'Brazil', 
           founded: 1895,
           logo: 'https://media.api-sports.io/football/teams/131.png'
@@ -79,7 +85,7 @@ app.get('/teams/brazil', async (req, res) => {
       { 
         team: { 
           id: 135, 
-          name: 'São Paulo', 
+          name: 'Cruzeiro', 
           country: 'Brazil', 
           founded: 1930,
           logo: 'https://media.api-sports.io/football/teams/135.png'
@@ -94,7 +100,7 @@ app.get('/teams/brazil', async (req, res) => {
       { 
         team: { 
           id: 134, 
-          name: 'Palmeiras', 
+          name: 'Ceara', 
           country: 'Brazil', 
           founded: 1914,
           logo: 'https://media.api-sports.io/football/teams/134.png'
