@@ -2,6 +2,9 @@ import React, { useState, useEffect, useActionState } from "react";
 import "./JogoDaVelha.css";
 import video from "./midia/tutorial.mp4";
 import imagem from "./midia/exemplo.jpg";
+import Pagina2 from "./Pagina2";
+import { useNavigate} from "react-router-dom";
+
 
 export default function JogoDaVelha() {
   const [quadrados, setQuadrados] = useState(Array(9).fill(null));
@@ -12,6 +15,8 @@ export default function JogoDaVelha() {
   const vencedor = calcularVencedor(quadrados);
   const [nomeTime, setNomeTime] = useState(["X", "O"]);
   const [iconeTrocado, setTrocaIcone] = useState(true);
+
+  
 
   // Buscar times quando o componente carrega
   useEffect(() => {
@@ -26,6 +31,8 @@ export default function JogoDaVelha() {
     setXProximo(!xProximo);
   }
 
+  
+
   function reiniciar() {
     setQuadrados(Array(9).fill(null));
     setXProximo(true);
@@ -34,7 +41,7 @@ export default function JogoDaVelha() {
   async function ProcurarTime() {
     try {
       console.log("📡 Buscando todos os times...");
-      const resposta = await fetch("http://localhost:4000/teams/brazil");
+      const resposta = await fetch("/teams/brazil");
 
       if (!resposta.ok) {
         throw new Error(`Erro HTTP: ${resposta.status}`);
@@ -73,6 +80,12 @@ export default function JogoDaVelha() {
     setTrocaIcone(!iconeTrocado);
   }
 
+    var navegation = useNavigate()
+
+    const TrocarPagina = () => {
+      navegation("/2")
+    }
+
   return (
     <div className="container">
       <div className="busca-times">
@@ -93,6 +106,9 @@ export default function JogoDaVelha() {
               marginRight: "10px",
             }}
           />
+
+          
+          
           <button onClick={ProcurarTime} className="botao-buscar"></button>
         </div>
 
@@ -173,14 +189,20 @@ export default function JogoDaVelha() {
             : `Próximo jogador: ${xProximo ? nomeTime[0] : nomeTime[1]}`}
         </h2>
         <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+
+          
           <button className="reiniciar" onClick={reiniciar}>
             Reiniciar
           </button>
-          <button className="reiniciar" onClick={reiniciar}>
-            Mudar Times
-          </button>
+
+          <button className="reiniciar" onClick={TrocarPagina}>Como Jogar</button>
+          
+
+
         </div>
       </div>
+
+      
 
       <div className="busca-times">
         <h3>Lado O</h3>
@@ -260,6 +282,8 @@ export default function JogoDaVelha() {
     </div>
   );
 }
+
+
 
 function calcularVencedor(q) {
   const linhas = [
