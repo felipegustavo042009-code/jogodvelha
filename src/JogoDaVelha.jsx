@@ -90,7 +90,7 @@ export default function JogoDaVelha() {
     <div className="container">
       <div className="busca-times">
         <h3>Lado X</h3>
-        <h3>Times do Brasil (X)</h3>
+        <h3>Times do Brasil</h3>
 
         <div style={{ marginBottom: "15px" }}>
           <input
@@ -301,4 +301,5 @@ function calcularVencedor(q) {
   }
   return null;
 }
+
 
