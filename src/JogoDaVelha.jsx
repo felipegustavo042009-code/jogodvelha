@@ -185,7 +185,7 @@ export default function JogoDaVelha() {
           {vencedor
             ? vencedor === "O"
               ? `Vencedor : ${nomeTime[1]}`
-              : `Vendedor : ${nomeTime[0]}`
+              : `Vencedor : ${nomeTime[0]}`
             : `Próximo jogador: ${xProximo ? nomeTime[0] : nomeTime[1]}`}
         </h2>
         <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
@@ -301,3 +301,4 @@ function calcularVencedor(q) {
   }
   return null;
 }
+
