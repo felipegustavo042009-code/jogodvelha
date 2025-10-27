@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'build')));
 
 // Sua API existente
-const API_KEY = '079e7f22b000294a57d32de4221c031d0';
+const API_KEY = 'f892c2ab73d3a70a4f5c3200bf413820';
 
 const API_HOST = 'v3.football.api-sports.io';
 
