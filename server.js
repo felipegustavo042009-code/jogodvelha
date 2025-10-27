@@ -113,7 +113,7 @@ app.get('/teams/brazil', async (req, res) => {
       name: 'Flamengo', 
       country: 'Brazil', 
       founded: 1895,
-      logo: 'https://media.api-sports.io/football/teams/136.png'
+      logo: 'https://media.api-sports.io/football/teams/127.png'
     },
     venue: { 
       id: 237, 
@@ -128,7 +128,7 @@ app.get('/teams/brazil', async (req, res) => {
       name: 'Palmeiras', 
       country: 'Brazil', 
       founded: 1914,
-      logo: 'https://media.api-sports.io/football/teams/137.png'
+      logo: 'https://media.api-sports.io/football/teams/121.png'
     },
     venue: { 
       id: 238, 
@@ -143,7 +143,7 @@ app.get('/teams/brazil', async (req, res) => {
       name: 'São Paulo', 
       country: 'Brazil', 
       founded: 1930,
-      logo: 'https://media.api-sports.io/football/teams/138.png'
+      logo: 'https://media.api-sports.io/football/teams/126.png'
     },
     venue: { 
       id: 239, 
@@ -158,7 +158,7 @@ app.get('/teams/brazil', async (req, res) => {
       name: 'Grêmio', 
       country: 'Brazil', 
       founded: 1903,
-      logo: 'https://media.api-sports.io/football/teams/139.png'
+      logo: 'https://media.api-sports.io/football/teams/130.png'
     },
     venue: { 
       id: 240, 
@@ -173,7 +173,7 @@ app.get('/teams/brazil', async (req, res) => {
       name: 'Internacional', 
       country: 'Brazil', 
       founded: 1909,
-      logo: 'https://media.api-sports.io/football/teams/140.png'
+      logo: 'https://media.api-sports.io/football/teams/119.png'
     },
     venue: { 
       id: 241, 
@@ -188,7 +188,7 @@ app.get('/teams/brazil', async (req, res) => {
       name: 'Vasco da Gama', 
       country: 'Brazil', 
       founded: 1898,
-      logo: 'https://media.api-sports.io/football/teams/141.png'
+      logo: 'https://media.api-sports.io/football/teams/133.png'
     },
     venue: { 
       id: 242, 
@@ -203,7 +203,7 @@ app.get('/teams/brazil', async (req, res) => {
       name: 'Atlético Mineiro', 
       country: 'Brazil', 
       founded: 1908,
-      logo: 'https://media.api-sports.io/football/teams/142.png'
+      logo: 'https://media.api-sports.io/football/teams/117.png'
     },
     venue: { 
       id: 243, 
@@ -218,7 +218,7 @@ app.get('/teams/brazil', async (req, res) => {
       name: 'Bahia', 
       country: 'Brazil', 
       founded: 1931,
-      logo: 'https://media.api-sports.io/football/teams/143.png'
+      logo: 'https://media.api-sports.io/football/teams/118.png'
     },
     venue: { 
       id: 244, 
@@ -253,5 +253,6 @@ app.listen(PORT, () => {
   console.log(`📍 React App: http://localhost:${PORT}/`);
 
 });
+
 
 
