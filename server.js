@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'build')));
 
 // Sua API existente
-const API_KEY = '0cfb8399bfc2a62d8467e5b8643ce93a';
+const API_KEY = '079e7f22b000294a57d32de4221c031d0';
 
 const API_HOST = 'v3.football.api-sports.io';
 
@@ -253,4 +253,5 @@ app.listen(PORT, () => {
   console.log(`📍 React App: http://localhost:${PORT}/`);
 
 });
+
 
